@@ -1,8 +1,8 @@
 
 // 8051 Serial Port communication : Data from PC to 8051 and its interfaced LCD
 
-/* Program for Serial recieving of data from PC(through Hyperterminal) to 8051
-microcontroller and to display recived data on 16X2 LCD display
+/* Program for Serial receiving of data from PC(through Hyperterminal) to 8051
+microcontroller and to display received data on 16X2 LCD display
 NOTE: The following code is meant to transmitt only one letter or number or symbol
  at time i.e word or sentence cannot be sent at a single unit time.  */
 
@@ -33,7 +33,7 @@ void main()
   TR1=1;          // Begin timer
   while(1)
   {
-    while(RI==0);  // wait for recieve interrupt
+    while(RI==0);  // wait for receive interrupt
     info=SBUF;    // Transfer Incomming Data fro PC stored in Serial Buffer into variable info
     LCD_Data(info); // Display Data on LCD
     msDelay(5);
