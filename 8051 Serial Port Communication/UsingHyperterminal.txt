@@ -1,0 +1,34 @@
+This file describes how to use Hyperterminal to communication with 8051 microcontroller.
+
+DOWNLOADING Hyperterminal :
+1. Visit https://www.hilgraeve.com/hyperterminal-trial/. Click download option.
+2. Install the application.
+
+NOTE: Hyperterminal is present by default in Windows XP. Access in Accessories->communications->Hyperterminal
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Hyperterminal to transmit information into 8051:
+1. Click hyperterminal icon.
+2 A pop up appears where you need to give your geographical information such as country
+and zip code. Click OK after giving details.
+4. Then a window appears with options for baud rate which has to match the one you have given in code dumped into 8051.[0xFA=4800,0xFD=9600]
+  And also choose 'None' in place of Hardware at decision to control option.
+3. Another pop-up window appears with heading "Connection Description". Here you need to give name
+to your connection and save it by clicking OK
+4.Then a plain window similar to Notepad appears. In case you are unable to write anything then
+click File-> Properties -> ASCII Setup. then mark all checklist options and click ok.
+5.Type anything in Keyboard. The typed letters can be viewed in 8051 microcontroller.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Hyperterminal to Receive Information from 8051:
+1. Click hyperterminal icon.
+2 A pop up appears where you need to give your geographical information such as country
+and zip code. Click OK after giving details.
+4. Then a window appears with options for baud rate which has to match the one you have given in code dumped into 8051.[0xFA=4800,0xFD=9600]
+  And also choose 'None' in place of Hardware at decision to control option.
+3. Another pop-up window appears with heading "Connection Description". Here you need to give name
+to your connection and save it by clicking OK
+4.Then a plain window similar to Notepad appears.
+5. When the data in Microcontroller is Transferred to PC, the data is viewed in this space.
